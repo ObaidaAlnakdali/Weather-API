@@ -1,25 +1,70 @@
-.app {
-  height: 100vh;
-  width: 100vw;
-  transition: background-color 1s ease-in;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway";
 }
 
-.app__header,
-.app__main {
-  width: 100%;
+body {
+  background-color: #cee3e6;
+}
+
+header {
+  padding: 15px;
+  background-color: #5f838387;
+  display: flex;
+}
+
+header input {
+  border: none;
+  background: top;
+  padding: 0px 10px;
+  color: #ffffff;
+  margin-right: 30px;
+}
+
+header input:focus-visible {
+  border-bottom: 1px solid #8f8f8f;
+  outline: none;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+  opacity: 1; /* Firefox */
+}
+
+header button {
+  padding: 12px 25px;
+  border: none;
+  background-color: #7da5a5ad;
+}
+
+.today {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  font-family: "Raleway", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  justify-content: center;
+  margin: 40px;
 }
 
-/*  Search bar */
+.today img{
+  max-width: 300px;
+  max-height: 300px;
+}
 
-/* Current weather */
 
-div {
-  border: 5px solid red;
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 10px;
+}
+
+.item {
+  margin : 20px;
+}
+
+.item img{
+  width: 150px;
 }
