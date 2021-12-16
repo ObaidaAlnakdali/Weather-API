@@ -3,7 +3,10 @@ import Search from "./components/Search";
 
 import SayHi, { SayHello } from "./components/WeatherItem";
 import fakeWeatherData from "./fakeWeatherData.json";
-import wether from "./img/weather-icons/clear.svg"
+
+import snow from "./img/weather-icons/snow.svg";
+import clear from "./img/weather-icons/clear.svg";
+import drizzle from "./img/weather-icons/drizzle.svg";
 
 import "./App.css";
 
@@ -29,34 +32,48 @@ class App extends Component {
         </header>
 
         <div className="today">
-          <img src={"https://via.placeholder.com/300"} alt="" />
+          <img src={drizzle} alt="" />
           <h4>Overcast cloude</h4>
-          <h3>Temperature <span>10 to 11 C</span></h3>
-          <p></p>
+          <h3>Temperature <span>10<sup>o</sup> to 11<sup>o</sup>C</span></h3>
+          <p>Humidity <span>10%</span> pressure<span> 1008.48</span></p>
         </div>
 
         <div className="items">
           <div className="item">
-            <img src="https://via.placeholder.com/150" alt="" />
-            </div>
+            <p>03:00</p>
+            <img src={clear} alt="" />
+            <p>10<sup>o</sup></p>
+          </div>
           <div className="item">
-            <img src="https://via.placeholder.com/150" alt="" />
-            </div>
+            <p>06:00</p>
+            <img src={drizzle} alt="" />
+            <p>10<sup>o</sup></p>
+          </div>
           <div className="item">
-            <img src="https://via.placeholder.com/150" alt="" />
-            </div>
+            <p>06:00</p>
+            <img src={drizzle} alt="" />
+            <p>10<sup>o</sup></p>
+          </div>
           <div className="item">
-            <img src="https://via.placeholder.com/150" alt="" />
-            </div>
+            <p>06:00</p>
+            <img src={clear} alt="" />
+            <p>10<sup>o</sup></p>
+          </div>
           <div className="item">
-            <img src="https://via.placeholder.com/150" alt="" />
-            </div>
+            <p>06:00</p>
+            <img src={snow} alt="" />
+            <p>10<sup>o</sup></p>
+          </div>
           <div className="item">
-            <img src="https://via.placeholder.com/150" alt="" />
-            </div>
+            <p>06:00</p>
+            <img src={clear} alt="" />
+            <p>6<sup>o</sup></p>
+          </div>
           <div className="item">
-            <img src="https://via.placeholder.com/150" alt="" />
-            </div>
+            <p>06:00</p>
+            <img src={drizzle} alt="" />
+            <p>8<sup>o</sup></p>
+          </div>
         </div>
 
       </div>
