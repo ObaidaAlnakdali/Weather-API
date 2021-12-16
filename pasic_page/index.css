@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+}
+
+header {
+    padding: 15px;
+    background-color: #5f838387;
+    display: flex;
+}
+
+header input{
+    border: none;
+    background: top;
+    padding: 0px 10px;
+    color: #ffffff;
+    margin-right: 30px;
+}
+
+header input:focus-visible{
+    border-bottom: 1px solid #8f8f8f;
+    outline: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ffffff;
+    opacity: 1; /* Firefox */
+  }
+
+header button{
+    padding: 12px 25px;
+    border: none;
+    background-color: #7da5a5ad;
+}
