@@ -5,12 +5,12 @@
 }
 
 body {
-  background-color: #cee3e6;
+  background-color: #94c8f4;
 }
 
 header {
   padding: 15px;
-  background-color: #5f838387;
+  background-color: #759eda;
   display: flex;
 }
 
@@ -20,6 +20,7 @@ header input {
   padding: 0px 10px;
   color: #ffffff;
   margin-right: 30px;
+  font-size: 18px;
 }
 
 header input:focus-visible {
@@ -34,44 +35,53 @@ header input:focus-visible {
 }
 
 header button {
-  padding: 12px 25px;
+  padding: 15px 25px;
+  color: #171e65;
   border: none;
-  background-color: #7da5a5ad;
-  width: 200px;
+  background-color: #5879c7;
+  width: 150px;
+  font-weight: bold;
 }
 
 .today {
+  margin: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin: 40px;
+  align-items: center;
 }
 
-.today img{
-  max-width: 250px;
-  max-height: 250px;
+.today img {
+  max-width: 200px;
 }
 
-.today h4{
+.today .weather-title {
+  font-size: 18px;
+  font-weight: bold;
   color: #fff;
-  margin: 0 10px 10px;
+  margin: 0 10px 30px;
 }
 
-.today h3 span{
+.today .temperature {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.today .temperature span {
   font-weight: 500;
 }
 
-.today p{
+.today .humidity {
   padding: 15px;
-font-weight: bold;
+  font-weight: bold;
+  font-size: 14px;
 }
 
-.today p span{
+.today .humidity span {
   font-weight: 300;
 }
 
-sup{    
+sup {
   font-size: 10px;
   font-weight: bold;
 }
@@ -84,27 +94,28 @@ sup{
 }
 
 .item {
-  margin : 20px;
+  margin: 20px;
   text-align: center;
 }
 
-.item img{
+.item img {
   width: 100px;
 }
 
-@media (max-width: 450px){
+@media (max-width: 450px) {
   header {
     flex-direction: column;
     align-items: center;
   }
 
-  header *{
-    margin:10px;
+  header * {
+    margin: 10px;
   }
 
   header input {
     padding: 10px;
     text-align: center;
+    margin-right: 10px;
   }
 
   header button {
