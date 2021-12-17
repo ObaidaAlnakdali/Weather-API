@@ -1,0 +1,38 @@
+
+.today {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .today img {
+    max-width: 200px;
+  }
+  
+  .today .weather-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 10px 30px;
+  }
+  
+  .today .temperature {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .today .temperature span {
+    font-weight: 500;
+  }
+  
+  .today .humidity {
+    padding: 15px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .today .humidity span {
+    font-weight: 300;
+  }

@@ -1,7 +1,7 @@
 import React from "react";
-
-import clear from "../img/weather-icons/clear.svg";
 import "./Search.css";
+import clear from "../img/weather-icons/clear.svg";
+
 class Search extends React.Component {
   state = {
     input: ""
@@ -9,9 +9,10 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div>
-       
-      </div>
+      <header>
+        <input type="text" placeholder="Type in a city name" />
+        <button>FIND WEATHER</button>
+      </header>
     );
   }
 }
