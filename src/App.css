@@ -13,4 +13,11 @@ sup {
   font-weight: bold;
 }
 
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 10px;
+}
+
 

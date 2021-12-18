@@ -4,48 +4,23 @@ import snow from "../img/weather-icons/snow.svg";
 import storm from "../img/weather-icons/storm.svg";
 import clear from "../img/weather-icons/clear.svg";
 import drizzle from "../img/weather-icons/drizzle.svg";
+import cloudy from "../img/weather-icons/cloudy.svg";
+import fog from "../img/weather-icons/fog.svg";
+import partlycloudy from "../img/weather-icons/partlycloudy.svg";
+import rain from "../img/weather-icons/rain.svg";
+import unknown from "../img/weather-icons/unknown.svg";
 import "./WeatherItem.css";
 
 class WeatherItem extends Component {
   render() {
     return (
-      <section className="items">
+      <div>
         <div className="item">
-          <p>03:00</p>
-          <img src={storm} alt="" />
-          <p>10&deg;C</p>
+          <p>18:00</p>
+          <img src={rain} alt="" />
+          <p>{this.props.list.weather[0].id}&deg;C</p>
         </div>
-        <div className="item">
-          <p>06:00</p>
-          <img src={drizzle} alt="" />
-          <p>10&deg;C</p>
-        </div>
-        <div className="item">
-          <p>06:00</p>
-          <img src={drizzle} alt="" />
-          <p>10&deg;C</p>
-        </div>
-        <div className="item">
-          <p>06:00</p>
-          <img src={clear} alt="" />
-          <p>10&deg;C</p>
-        </div>
-        <div className="item">
-          <p>06:00</p>
-          <img src={snow} alt="" />
-          <p>10&deg;C</p>
-        </div>
-        <div className="item">
-          <p>06:00</p>
-          <img src={clear} alt="" />
-          <p>6&deg;C</p>
-        </div>
-        <div className="item">
-          <p>06:00</p>
-          <img src={drizzle} alt="" />
-          <p>8&deg;C</p>
-        </div>
-      </section>
+      </div>
     )
   }
 }
