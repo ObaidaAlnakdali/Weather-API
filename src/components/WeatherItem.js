@@ -1,17 +1,12 @@
 import React, { Component } from "react";
-import { render } from "react-dom";
-import snow from "../img/weather-icons/snow.svg";
-import storm from "../img/weather-icons/storm.svg";
-import clear from "../img/weather-icons/clear.svg";
-import drizzle from "../img/weather-icons/drizzle.svg";
-import cloudy from "../img/weather-icons/cloudy.svg";
-import fog from "../img/weather-icons/fog.svg";
-import partlycloudy from "../img/weather-icons/partlycloudy.svg";
+//import { render } from "react-dom";
 import rain from "../img/weather-icons/rain.svg";
-import unknown from "../img/weather-icons/unknown.svg";
 import "./WeatherItem.css";
 
 class WeatherItem extends Component {
+
+
+
   render() {
     return (
       <div>

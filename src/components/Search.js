@@ -1,17 +1,35 @@
 import React from "react";
 import "./Search.css";
-import clear from "../img/weather-icons/clear.svg";
 
 class Search extends React.Component {
+
   state = {
-    input: ""
-  };
+    name: ''
+  }
+
+  handleOnchange = (e) => {
+    this.setState({
+      name: e.target.value
+    })
+  }
+
+  handleSubmission = (e)=>{
+    e.preventDefault();
+    this.props.cityNameHandler(this.state.name)
+    this.setState(
+        {
+            name:''
+        }
+    )
+  }
 
   render() {
     return (
       <header>
-        <input type="text" placeholder="Type in a city name" />
-        <button>FIND WEATHER</button>
+        <form onSubmit={this.handleSubmission}>
+          <input value={this.state.name} onChange={this.handleOnchange} type="text" placeholder="Type in a city name" />
+          <button type="submit">FIND WEATHER</button>
+        </form>
       </header>
     );
   }
