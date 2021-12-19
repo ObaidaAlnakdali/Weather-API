@@ -1,10 +1,8 @@
+.item {
+  margin: 20px;
+  text-align: center;
+}
 
-  .item {
-    margin: 20px;
-    text-align: center;
-  }
-  
-  .item img {
-    width: 100px;
-  }
-  
+.item img {
+  width: 100px;
+}

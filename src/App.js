@@ -3,10 +3,8 @@ import Search from "./components/Search";
 import WeatherNow from "./components/WeatherNow";
 import Weatheritem from "./components/WeatherItem";
 import PageError from "./components/pageError";
-
-// import fakeWeatherData from "./fakeWeatherData.json";
-
 import "./App.css";
+// import fakeWeatherData from "./fakeWeatherData.json";
 
 class App extends Component {
   constructor(props) {
@@ -37,7 +35,7 @@ class App extends Component {
           <WeatherNow list={this.state.listWeather[0]} />
           <section className="items">
             {this.state.listWeather.map((key, index) => {
-              return <Weatheritem key={index} list={key} />
+              return <Weatheritem key={index} list={key} index={index} />
             })}
           </section>
         </div>

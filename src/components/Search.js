@@ -18,7 +18,7 @@ class Search extends React.Component {
     this.props.cityNameHandler(this.state.name)
     this.setState(
         {
-            name:''
+            name: ''
         }
     )
   }
@@ -27,11 +27,12 @@ class Search extends React.Component {
     return (
       <header>
         <form onSubmit={this.handleSubmission}>
-          <input value={this.state.name} onChange={this.handleOnchange} type="text" placeholder="Type in a city name" />
+          <input value={this.state.name} onChange={this.handleOnchange} type="text" placeholder="Type in a city name" required/>
           <button type="submit">FIND WEATHER</button>
         </form>
       </header>
     );
   }
 }
+
 export default Search;

@@ -36,3 +36,12 @@
   .today .humidity span {
     font-weight: 300;
   }
+
+  body {
+    background-color: #d3b395f5;
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+}
