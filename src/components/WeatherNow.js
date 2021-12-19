@@ -32,7 +32,7 @@ class WeatherNow extends Component {
     render() {
         return (
             <section className="today">
-                <img src= {require(`../img/weather-icons/${this.getIcon(this.props.list.id)}.svg`)} alt="" />
+                <img src={require(`../img/weather-icons/${this.getIcon(this.props.list.weather[0].id)}.svg`)} alt="" />
                 <p className="weather-title">{this.props.list.weather[0].description}</p>
                 <p className="temperature">Temperature <span>&nbsp;&nbsp;10&deg; to 11&deg;C</span></p>
                 <p className="humidity">

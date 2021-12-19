@@ -19,13 +19,14 @@ class App extends Component {
   getdata = (city => {
     fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&cnt=8&units=metric&appid=45b03c5e92d47b89fbf451225b6a704a`)
       .then(res => res.json())
-      .then(data => this.setState({ listWeather: data.list }))
+      .then(data => {
+        this.setState({ listWeather: data.list });
+        console.log("List", this.state.listWeather);
+      })
   });
 
   handleSearch = value => {
-    console.log("country", value)
     this.getdata(value);
-    console.log(this.state.listWeather);
   };
 
   render() {
