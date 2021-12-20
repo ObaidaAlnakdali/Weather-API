@@ -17,6 +17,7 @@ header input:focus-visible {
   border-bottom: 1px solid #8f8f8f;
   outline: none;
   padding-bottom: 10px;y
+  
 }
 
 ::placeholder {
