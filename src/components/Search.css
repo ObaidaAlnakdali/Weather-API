@@ -1,23 +1,25 @@
 header {
   padding: 15px;
   background-color: #5150504b;
-  display: flex;
 }
 
-header input {
+form{
+  display: flex;
+  align-items: center;
+}
+
+form input {
   border: none;
   background: top;
-  padding: 0px 10px;
+  padding: 5px 5px 10px;
   color: #ffffff;
   margin-right: 30px;
   font-size: 18px;
 }
 
-header input:focus-visible {
-  border-bottom: 1px solid #8f8f8f;
+form input:focus-visible{
   outline: none;
-  padding-bottom: 10px;y
-  
+  border-bottom: 1px solid #666666;
 }
 
 ::placeholder {
@@ -41,18 +43,25 @@ header button {
     align-items: center;
   }
 
-  header * {
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form * {
     margin: 10px;
   }
 
-  header input {
+  form input {
     padding: 10px;
     text-align: center;
     margin-right: 10px;
   }
 
-  header button {
-    width: 60%;
+  form button {
+    width: 70%;
   }
 
   ::placeholder {
