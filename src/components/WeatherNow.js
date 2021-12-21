@@ -42,7 +42,7 @@ class WeatherNow extends Component {
             <section className="today">
                 <img src={require(`../img/weather-icons/${this.getIcon(this.props.list.weather[0].id)}.svg`)} alt="" />
                 <p className="weather-title">{this.props.list.weather[0].description}</p>
-                <p className="temperature">Temperature <span>&nbsp;&nbsp;{parseInt(this.props.list.main.temp_min)}&deg; to {parseInt(this.props.list.main.temp_max)}&deg; C</span></p>
+                <p className="temperature">Temperature <span>&nbsp;&nbsp;{Math.round(this.props.list.main.temp_min)}&deg; to {Math.round(this.props.list.main.temp_max)}&deg; C</span></p>
                 <p className="humidity">
                     Humidity&nbsp;&nbsp;&nbsp;&nbsp;
                     <span>{this.props.list.main.humidity}%</span>

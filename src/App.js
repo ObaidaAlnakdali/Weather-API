@@ -14,24 +14,21 @@ class App extends Component {
     };
   }
 
-  getdata = (city => {
+  getdata = city => {
     fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&cnt=8&units=metric&appid=45b03c5e92d47b89fbf451225b6a704a`)
       .then(res => res.json())
       .then(data => {
         this.setState({ listWeather: data.list });
         console.log("List", this.state.listWeather);
       })
-  });
-
-  handleSearch = value => {
-    this.getdata(value);
   };
 
   render() {
+    // eslint-disable-next-line eqeqeq
     if (this.state.listWeather != "" && this.state.listWeather != undefined) {
       return (
         <div>
-          <Search cityNameHandler={this.handleSearch} />
+          <Search cityNameHandler={this.getdata} />
           <WeatherNow list={this.state.listWeather[0]} />
           <section className="items">
             {this.state.listWeather.map((key, index) => {
@@ -44,7 +41,7 @@ class App extends Component {
     else {
       return (
         <>
-          <Search cityNameHandler={this.handleSearch} />
+          <Search cityNameHandler={this.getdata} />
           <PageError />
         </>
       );

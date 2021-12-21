@@ -37,13 +37,15 @@ class WeatherItem extends Component {
     }
   }
 
-  getdata(i){
+  getdata(i) {
     if (i > 0) {
-      return <div className="item">
-        <p>{this.getTime(i)}</p>
-        <img src={require(`../img/weather-icons/${this.getIcon(this.props.list.weather[0].id)}.svg`)} alt="" />
-        <p>{parseInt(this.props.list.main.temp_min)}&deg;C</p>
-      </div>
+      return (
+        <div className="item">
+          <p>{this.getTime(i)}</p>
+          <img src={require(`../img/weather-icons/${this.getIcon(this.props.list.weather[0].id)}.svg`)} alt="" />
+          <p>{parseInt(this.props.list.main.temp_min)}&deg;C</p>
+        </div>
+      )
     }
   };
 
